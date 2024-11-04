@@ -1,0 +1,64 @@
+<div th:fragment="header">
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Переключить тему (темная)" _mstaria-label="312312" _msthash="1">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text" _msttexthash="2965703" _msthash="2">Переключить тему</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" _msthidden="3">
+        <li _msthidden="1">
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false" _msthidden="1">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg><font _mstmutation="1" _msttexthash="59995" _msthidden="1" _msthash="3">
+                Light
+            </font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+        </li>
+        <li _msthidden="1">
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true" _msthidden="1">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg><font _mstmutation="1" _msttexthash="43524" _msthidden="1" _msthash="4">
+                Dark
+            </font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+        </li>
+        <li _msthidden="1">
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false" _msthidden="1">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg><font _mstmutation="1" _msttexthash="46085" _msthidden="1" _msthash="5">
+                Auto
+            </font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+        </li>
+    </ul>
+</div>
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand d-md-none" href="#" _msthidden="1">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg><font _mstmutation="1" _msttexthash="116688" _msthidden="1" _msthash="6">
+            Aperture
+        </font></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation" _msthidden="A" _mstaria-label="320099" _msthash="7">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header" _msthidden="2">
+                <h5 class="offcanvas-title" id="offcanvasLabel" _msttexthash="116688" _msthidden="1" _msthash="8">Aperture</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" _msthidden="A" _mstaria-label="59709" _msthash="9"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 justify-content-between">
+                    <li class="nav-item"><a class="nav-link" href="#">
+                        <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                    </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" _msttexthash="632099" _msthash="10">Турне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog/add" _msttexthash="985114" _msthash="11">Продукт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" _msttexthash="984971" _msthash="12">Функции</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" _msttexthash="1858688" _msthash="13">Предприятие</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" _msttexthash="1386606" _msthash="14">Поддержка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" _msttexthash="2945748" _msthash="15">Ценообразование</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">
+                        <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+</div>
